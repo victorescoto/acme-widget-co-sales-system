@@ -17,7 +17,7 @@ services:
     volumes:
       - .:/var/www/html
     working_dir: /var/www/html
-    command: vendor/bin/phpunit
+    command: composer test
 
   analyse:
     build:
